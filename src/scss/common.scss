@@ -1,0 +1,71 @@
+// Заголовки, загальні БЕМ блоки та інше...
+body {
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -100%;
+		background-color: $blueColor;
+		height: 300px;
+		width: 164px;
+		transition: all 0.3s ease 0s;
+		border-radius: 0 0 15px 0;
+
+		.menu-open & {
+			top: 0;
+			left: 0;
+			transition: all 0.3s ease 0s;
+			z-index: 150;
+			position: fixed;
+			@media (min-width: em(1000)){
+				left: -100%;
+			}
+		}
+	}
+}
+
+.button-main-style {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	font-weight: 600;
+	line-height: 166%;
+	background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+	box-shadow: 0px 10px 20px rgba(17, 17, 17, 0.1);
+	border-radius: 25px;
+	transition: all 0.3s ease 0s;
+	// Max width, padding, height задаем индивидуально
+	&:hover {
+		background: linear-gradient(89.77deg, #DD6A00 0.2%, #F99806 99.82%);
+		box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2), inset 0px 4px 20px rgba(0, 0, 0, 0.1);
+		transition: all 0.3s ease 0s;
+	}
+	&:active {
+		background: linear-gradient(89.77deg, #DD6A00 0.2%, #F99806 99.82%);
+		box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2), inset 0px 7px 5px rgba(0, 0, 0, 0.2);
+		transition: all 0.3s ease 0s;
+	}
+}
+
+.blue-title {
+	font-weight: 800;
+	font-size: 36px;
+	line-height: 122%;
+	color: $blueColor;
+}
+
+.icon-circle {
+	width: 40px;
+	height: 40px;
+	min-width: 40px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	@media (max-width: em(700)){
+		width: rem(35);
+		height: rem(35);
+		min-width: rem(35);
+	}
+}
