@@ -40,31 +40,31 @@
 		padding-left: rem(20);
 		position: relative;
 
-		&::before {
-			content: "";
-			position: absolute;
-			z-index: -1;
-			top: -30px;
-			right: -60px;
-			height: 810px;
-			width: 750px;
-			background-color: $blueColor;
+		// &::before {
+		// 	content: "";
+		// 	position: absolute;
+		// 	z-index: -1;
+		// 	top: -30px;
+		// 	right: -60px;
+		// 	height: 810px;
+		// 	width: 750px;
+		// 	background-color: $blueColor;
 
-			@media (max-width: em(1000)){
-				left: 320px;
-				right: none;
-				height: 63vw;
-			}
-			@media (max-width: em(630)){
-				left: 250px;
-			}
-			@media (max-width: em(560)){
-				left: 200px;
-			}
-			@media (max-width: em(510)){
-				left: 60vw;
-			}
-		}
+		// 	@media (max-width: em(1000)){
+		// 		left: 320px;
+		// 		right: none;
+		// 		height: 63vw;
+		// 	}
+		// 	@media (max-width: em(630)){
+		// 		left: 250px;
+		// 	}
+		// 	@media (max-width: em(560)){
+		// 		left: 200px;
+		// 	}
+		// 	@media (max-width: em(510)){
+		// 		left: 60vw;
+		// 	}
+		// }
 	}
 	&__navigation {
 		
@@ -234,10 +234,16 @@
 		position: absolute;
 		height: rem(910);
 		width: rem(750);
-		color: $blueColor;
+		z-index: -1;
 		background-color: $blueColor;
 		@media (max-width: em(1200)){
 			height: 67vw;
+		}
+		@media (max-width: em(1000)){
+			top: -30px;
+			width: 750px;
+			left: 0;
+			height: 63vw;
 		}
 	}
 }
