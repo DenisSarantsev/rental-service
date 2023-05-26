@@ -2060,12 +2060,9 @@ button.swiper-pagination-bullet {
     height: 67vw;
   }
 
-  .top-footer {
-    margin-bottom: -15.625rem;
-  }
-
   .top-footer__container {
     gap: 6vw;
+    margin-bottom: -15.625rem;
   }
 
   .top-footer__form {
@@ -2127,10 +2124,6 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 48em) {
-  .top-footer {
-    margin-bottom: none;
-  }
-
   .top-footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2197,6 +2190,7 @@ button.swiper-pagination-bullet {
 
   .bottom-footer {
     height: 5rem;
+    margin-top: 21.875rem;
   }
 
   .bottom-footer__background-opacity {
@@ -2871,7 +2865,7 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 56.25em) {
-  .top-footer {
+  .top-footer__container {
     margin-bottom: -21.875rem;
   }
 

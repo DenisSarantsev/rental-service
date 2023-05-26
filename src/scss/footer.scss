@@ -20,15 +20,6 @@
 
 .top-footer {
 	position: relative;
-	@media (max-width: em(1200)){
-		margin-bottom: rem(-250);
-	}
-	@media (max-width: em(900)){
-		margin-bottom: rem(-350);
-	}
-	@media (max-width: em(768)){
-		margin-bottom: none;
-	}
 	
 	&__container {
 		justify-content: flex-end;
@@ -36,8 +27,10 @@
 		gap: rem(84);
 		@media (max-width: em(1200)){
 			gap: 6vw;
+			margin-bottom: rem(-250);
 		}
 		@media (max-width: em(900)){
+			margin-bottom: rem(-350);
 		}
 		@media (max-width: em(768)){
 			display: flex;
@@ -266,6 +259,7 @@
 	position: relative;
 	@media (max-width: em(768)){
 		height: rem(80);
+		margin-top: rem(350);
 	}
 
 	&__background-container {
