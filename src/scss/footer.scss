@@ -18,8 +18,6 @@
 }
 
 
-
-
 .top-footer {
 	position: relative;
 	@media (max-width: em(1200)){
@@ -29,7 +27,7 @@
 		margin-bottom: rem(-350);
 	}
 	@media (max-width: em(768)){
-		margin-bottom: rem(10);
+		margin-bottom: none;
 	}
 	
 	&__container {

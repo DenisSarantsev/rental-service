@@ -2128,7 +2128,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 48em) {
   .top-footer {
-    margin-bottom: 0.625rem;
+    margin-bottom: none;
   }
 
   .top-footer__container {
