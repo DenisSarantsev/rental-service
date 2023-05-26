@@ -534,11 +534,7 @@ body::before {
   margin-top: 6.25rem;
 }
 
-.top-footer {
-  position: relative;
-}
-
-.top-footer__container {
+.footer__top-container {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -546,6 +542,10 @@ body::before {
   display: -ms-flexbox;
   display: flex;
   gap: 5.25rem;
+}
+
+.top-footer {
+  position: relative;
 }
 
 .top-footer__form {
@@ -2060,7 +2060,7 @@ button.swiper-pagination-bullet {
     height: 67vw;
   }
 
-  .top-footer__container {
+  .footer__top-container {
     gap: 6vw;
     margin-bottom: -15.625rem;
   }
@@ -2124,7 +2124,7 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 48em) {
-  .top-footer__container {
+  .footer__top-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2865,7 +2865,7 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 56.25em) {
-  .top-footer__container {
+  .footer__top-container {
     margin-bottom: -21.875rem;
   }
 
