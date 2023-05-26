@@ -2305,6 +2305,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 35em) {
+  .top-header__right-block::before {
+    left: 200px;
+  }
+}
+
 @media (max-width: 30em) {
   .footer {
     margin-top: 1.25rem;
@@ -2550,14 +2556,9 @@ button.swiper-pagination-bullet {
   }
 
   .top-header__right-block::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    top: -30px;
     left: 320px;
-    height: 810px;
-    width: 750px;
-    background-color: #2B7AF1;
+    right: none;
+    height: 63vw;
   }
 
   .menu {
@@ -2793,30 +2794,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 62.5em) and (max-width: 62.5em) {
-  .top-header__right-block::before {
-    height: 63vw;
-  }
-}
-
-@media (max-width: 62.5em) and (max-width: 39.375em) {
-  .top-header__right-block::before {
-    left: 250px;
-  }
-}
-
-@media (max-width: 62.5em) and (max-width: 35em) {
-  .top-header__right-block::before {
-    left: 200px;
-  }
-}
-
-@media (max-width: 62.5em) and (max-width: 31.875em) {
-  .top-header__right-block::before {
-    left: 60vw;
-  }
-}
-
 @media (max-width: 62.5rem) {
   .email__text {
     display: none;
@@ -3020,6 +2997,12 @@ button.swiper-pagination-bullet {
   }
 }
 
+@media (max-width: 39.375em) {
+  .top-header__right-block::before {
+    left: 250px;
+  }
+}
+
 @media (max-width: 37.5em) {
   .footer-review__text {
     font-size: 0.75rem;
@@ -3138,6 +3121,10 @@ button.swiper-pagination-bullet {
 @media (max-width: 31.875em) {
   .top-header {
     margin-top: 0.9375rem;
+  }
+
+  .top-header__right-block::before {
+    left: 60vw;
   }
 
   .top-header__button {
