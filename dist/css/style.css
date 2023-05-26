@@ -2352,7 +2352,7 @@ button.swiper-pagination-bullet {
   }
 
   .apartments-card {
-    padding: 0;
+    padding: 0rem 0rem;
     gap: 0;
     max-height: 15.375rem;
   }

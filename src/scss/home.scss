@@ -394,7 +394,7 @@
 		justify-content: space-between;
 	}
 	@media (max-width: em(480)){
-		padding: 0;
+		padding: rem(0) rem(0);
 		gap: 0;
 		max-height: rem(246);
 	}
