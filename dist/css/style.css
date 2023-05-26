@@ -2136,7 +2136,7 @@ button.swiper-pagination-bullet {
         -ms-flex-align: center;
             align-items: center;
     gap: 1.25rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.625rem;
   }
 
   .top-footer__form {
