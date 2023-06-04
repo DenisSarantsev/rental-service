@@ -944,7 +944,20 @@ body::before {
 }
 
 .main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 26.25rem;
 }
 
@@ -1733,9 +1746,9 @@ body::before {
   line-height: 120%;
   color: #2B7AF1;
   font-weight: 700;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .card__price {
@@ -1765,6 +1778,252 @@ body::before {
   max-width: 10.625rem;
   width: 100%;
   padding: 0.5rem 1.25rem;
+}
+
+.apartment-card {
+  margin-top: 2.1875rem;
+  padding-top: 1.875rem;
+  background-color: #fff;
+}
+
+.card-main-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2.5rem;
+  width: 100%;
+  gap: 2.5rem;
+}
+
+.card-main-content__description {
+  width: 100%;
+  margin-top: 3.3125rem;
+}
+
+.tabs__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 35.9375rem;
+}
+
+.tabs__title img {
+  width: 8.75rem;
+  height: 5.375rem;
+  border-radius: 10px;
+}
+
+.tabs__body img {
+  -webkit-filter: drop-shadow(0px 10px 20px rgba(17, 17, 17, 0.1));
+          filter: drop-shadow(0px 10px 20px rgba(17, 17, 17, 0.1));
+  border-radius: 10px;
+  width: 45rem;
+  height: 26.1875rem;
+}
+
+.description {
+  margin-top: 3.375rem;
+  width: 100%;
+}
+
+.description__title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #333333;
+}
+
+.description__description {
+  font-size: 1.125rem;
+  line-height: 122%;
+  color: #333333;
+  margin-top: 1.25rem;
+}
+
+.description__price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  line-height: 120%;
+  color: #2B7AF1;
+  font-weight: 700;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 1.4375rem;
+}
+
+.description__price {
+  font-size: 1.5rem;
+}
+
+.description__price-period {
+  font-size: 1.125rem;
+}
+
+.description__adress {
+  margin-left: 2rem;
+  position: relative;
+  font-size: 1.125rem;
+  line-height: 122%;
+  color: #333333;
+}
+
+.description__adress::before {
+  content: url("../img/catalog/location-icon.png");
+  position: absolute;
+  left: -28px;
+  top: -2px;
+}
+
+.description__button {
+  max-width: 10.625rem;
+  width: 100%;
+  padding: 0.5rem 1.25rem;
+  margin-top: 1.875rem;
+}
+
+.charact {
+  margin-top: 6.25rem;
+}
+
+.charact__title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 122%;
+  color: #333333;
+}
+
+.charact__list-container {
+  margin-top: 1.25rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.charact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 10px;
+}
+
+.charact__list > * {
+  margin-left: 1.25rem;
+}
+
+.charact__item {
+  position: relative;
+  font-size: 18px;
+  line-height: 170%;
+  color: #000000;
+}
+
+.charact__item::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  top: 10px;
+  left: -17px;
+  height: 7px;
+  width: 7px;
+  background: #FFB039;
+}
+
+.apartments__bottom-block {
+  margin-top: 5rem;
+}
+
+.bottom-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.bottom-block__title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 122%;
+  color: #333333;
+}
+
+.bottom-block__button {
+  padding: 0.875rem 3.125rem;
+}
+
+.card-swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  max-width: 35.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-swiper-button-prev {
+  position: absolute;
+  z-index: 2000;
+  border-radius: 50%;
+}
+
+.card-swiper-button-next {
+  position: absolute;
+  z-index: 2000;
+  right: 0;
+  border-radius: 50%;
+}
+
+.about {
+  margin-top: 2.1875rem;
+  padding-top: 1.875rem;
+  background-color: #fff;
+}
+
+.about h1 {
+  margin-top: 3.125rem;
+}
+
+.about__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+.about__container img {
+  max-width: 800px;
+  width: 100%;
 }
 
 .swiper {
@@ -2166,6 +2425,14 @@ button.swiper-pagination-bullet {
   }
 
   .card__adress {
+    font-size: 1.4vw;
+  }
+
+  .description__price {
+    font-size: 1.8vw;
+  }
+
+  .description__adress {
     font-size: 1.4vw;
   }
 }
@@ -2596,6 +2863,10 @@ button.swiper-pagination-bullet {
   .card__button {
     max-width: 100%;
   }
+
+  .description__button {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 25em) {
@@ -2977,6 +3248,24 @@ button.swiper-pagination-bullet {
   .card__adress {
     font-size: 0.875rem;
   }
+
+  .apartment-card {
+    margin-top: 1.5625rem;
+    padding-top: 1.5625rem;
+  }
+
+  .description__price {
+    font-size: 1.125rem;
+  }
+
+  .description__adress {
+    font-size: 0.875rem;
+  }
+
+  .about {
+    margin-top: 1.5625rem;
+    padding-top: 1.5625rem;
+  }
 }
 
 @media (max-width: 62.5rem) {
@@ -3118,6 +3407,16 @@ button.swiper-pagination-bullet {
   }
 
   .catalog {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+
+  .apartment-card {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+  }
+
+  .about {
     margin-top: 1.25rem;
     padding-top: 1.25rem;
   }
