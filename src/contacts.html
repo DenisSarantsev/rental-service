@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"Apartments rental service"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<main class="page">
+				<div class="contacts-page">
+					<div class="contacts-page__container">
+						<h1 class="contacts-page__title blue-title">Контакти</h1>
+						<div class="contacts-page__contacts-container contacts-container">
+							<h2 class="contacts-container__title ">Зв'яжіться за нами:</h2>
+							<adress class="contacts-container__office">
+								Наш офіс: м. Ірпінь, вул. Миколи Гоголя 18Б, офіс 32
+							</adress>
+							<a href="tel:+380931234567" class="contacts-container__phone">
+								<div class="contacts-container__phone-icon icon-circle">
+									<div class="_icon-phone"></div>
+								</div>
+								+38 (093) 123-45-67</a>
+							<a href="mailto:mail@gmail.com" class="contacts-container__email">
+								<div class="contacts-container__message-icon icon-circle">
+									<div class="_icon-message"></div>
+								</div>
+								mail@gmail.com</a>
+						</div>
+						<div class="contacts-page__socials-container socials-container">
+							<h2 class="socials-container__title">Ми в соціальних мережах:</h2>
+							<a href="" class="socials-container__instagram">
+								<div class="socials-container__instagram-icon icon-circle">
+									<div class="_icon-instagram"></div>
+								</div>
+								Наш Instagram</a>
+							<a href="" class="socials-container__telegram">
+								<div class="socials-container__telegram-icon icon-circle">
+									<div class="_icon-telegram"></div>
+								</div>
+								Наш Telegram</a>
+							<a href="" class="socials-container__facebook">
+								<div class="socials-container__facebook-icon icon-circle">
+									<div class="_icon-facebook"></div>
+								</div>
+								Наш Facebook</a>
+						</div>
+						<div class="contacts-page__map-container map-container">
+							<iframe class="map-container__google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27918.333717062276!2d30.239303014536905!3d50.528210402077235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1685992544497!5m2!1suk!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</main>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>
