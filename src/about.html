@@ -7,7 +7,7 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
-				<section class="about">
+				<section data-watch data-watch-once data-watch-threshold="0.2" class="about">
 					<div class="about__container">
 						<h1 class="blue-title">Про нас</h1>
 						&nbsp Компанія "Елітна Оренда" - провідний постачальник послуг з подобової оренди квартир в мальовничому українському місті Ірпінь. Заснована в 2017 році, вона працює на ринку вже 6 років і стала незамінним партнером для туристів, бізнесменив та місцевих жителів, які шукають комфортне проживання на короткий термін.
@@ -22,6 +22,7 @@
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
+		@@include('html/_preloader.htm',{})
 		@@include('html/_js.htm',{})
 	</body>
 </html>

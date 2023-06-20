@@ -7,7 +7,7 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
-				<section class="apartment-card">
+				<section data-watch data-watch-once data-watch-threshold="0.2" class="apartment-card">
 					<div class="apartment-card__container">
 						<h2 class="apartment-card__title blue-title">
 							1-к квартира, 31 м², 1/5 эт.
@@ -30,6 +30,15 @@
 									<div class="tabs__body">
 										<img src="@img/card/image-5.jpg" alt="">
 									</div>
+									<div class="tabs__body">
+										<img src="@img/card/image-6.jpg" alt="">
+									</div>
+									<div class="tabs__body">
+										<img src="@img/card/image-7.jpg" alt="">
+									</div>
+									<div class="tabs__body">
+										<img src="@img/card/image-8.jpg" alt="">
+									</div>
 								</div>
 
 								<button type="button" class="card-swiper-button-prev blue-slider-button">
@@ -51,6 +60,15 @@
 											</button>
 											<button type="button" class="tabs__title swiper-slide card-slide">
 												<img src="@img/card/image-5.jpg" alt="">
+											</button>
+											<button type="button" class="tabs__title swiper-slide card-slide">
+												<img src="@img/card/image-6.jpg" alt="">
+											</button>
+											<button type="button" class="tabs__title swiper-slide card-slide">
+												<img src="@img/card/image-7.jpg" alt="">
+											</button>
+											<button type="button" class="tabs__title swiper-slide card-slide">
+												<img src="@img/card/image-8.jpg" alt="">
 											</button>
 										</nav>
 								</div>
@@ -125,13 +143,10 @@
 						</div>
 					</div>
 				</section>
-
-									
-
-
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
+		@@include('html/_preloader.htm',{})
 		@@include('html/_js.htm',{})
 	</body>
 </html>

@@ -7,7 +7,7 @@
 		<div class="wrapper">
 			@@include('html/_header.htm',{})
 			<main class="page">
-				<section class="catalog">
+				<section data-watch data-watch-once data-watch-threshold="0.2" class="catalog">
 					<div class="catalog__container">
 						<h2 class="catalog__title blue-title">
 							Наші квартири
@@ -215,6 +215,7 @@
 			</main>
 			@@include('html/_footer.htm',{})
 		</div>
+		@@include('html/_preloader.htm',{})
 		@@include('html/_js.htm',{})
 	</body>
 </html>
